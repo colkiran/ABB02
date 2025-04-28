@@ -1,0 +1,170 @@
+1. Python's object model
+2. Decorators and Annotations
+3. Marshalling and Data Persistence
+4. Connecting to databases
+5. Creating minimalistic web applications
+6. Creating RESTful API interface
+7. Introduction to threads 
+
+
+Decorators
+----------
+1. Functions
+
+How to write functions
+
+
+def fun(args):
+   print("Hello World")
+
+fun()
+
+define the function and then call the function
+
+mutable   - list, dictionary, set
+immutable - numbers, strings, tuple and frozen_set
+
+def fun(x, y):     # x = a, y = b
+   x += 10
+   y += 10
+   print("Hello World")
+
+a = 10
+b = 20
+
+fun(a, b)
+
+print(a, b, sep = ", ")
+
+1. if it is pass by ref - then the value of a and b gets updated
+2. if it is pass by val - then the value of a and b remains the same
+
+
+
+Functions
+---------
+1. call a function
+2. Passing arguments
+   a. pass by value	 - immutable data	
+   b. pass by reference  - mutable data
+   c. variable length arguments
+       1. *args	    - fun(*args) - pass more than one arg and it will 					be stored in a tuple
+       2. **kwargs  - fun(**args) - pass value with variable so it 					gets stored in a dictionary
+
+3. return values  - return a, b, c, d - will returned in a tuple
+
+	a = 10, b = 45, c = 67, d = 91
+        returns - (10, 45, 67, 91)
+	named tuple (immutable dictionary)
+	from collections import namedtuple
+
+4. recursive calls
+5. Lambdas - anonymous function with a single expression
+   result_of_exp = lambda var1, var2, var3...: expression
+   l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+   x = list(map(lambda a : a ** 2, l))
+   x = list(filter(lambda a : a % 2 == 0, l))
+   x = reduce(lambda a, b : a + b, l)
+   x = reduce(lambda a, b : a if a > b else b, l)
+
+   def square(x):
+      return x ** 2
+
+   x = map(square, l)
+
+7. scope of a variable 
+   a. local
+   b. global
+   c. non local
+
+Decorator
+---------
+1. Nested Functions
+2. Closures
+
+@classmethod
+@staticmethod
+@abstractmethod
+
+write a decorator to find the time taken by a function to execute
+
+def fun(x):
+   lst = []
+   for i in range(x):
+       for j in range(1, i+1):
+	   lst.append(j ** 2)
+
+fun(6000)
+
+
+OOPS
+----
+
+Object Oriented Programming
+---------------------------
+Inheritance
+
+Encapsulation
+
+Abstraction
+
+Polymorphism
+
+
+Bank
+-----
+Open a new account in SBI bank
+-------------------------------
+90's - you should be introduced by some account holder in the bank
+
+class BankAccount:
+  
+   def newAccount():
+	you should be introduced by some account holder in the bank
+
+minimum balance  - 500
+
+class NewAccount(BankAccount):
+
+   def newAccount():
+      submit the KYC details 
+
+--------------------------------------------------------------------
+
+Polymorphism
+------------
+
+def makeNoise(obj):
+    obj.makeNoise()
+
+
+obj = lion, dog, monkey, cuckoo
+
+
+Class Attributes or Class Variables
+-----------------------------------
+class attributes values are same across objects
+class attributes can be accessed with class name
+
+
+write two class methods 
+
+1. set the name of the group head
+2. get the name of the group head
+
+
+__name__    -> double underscore name => dunder name
+
+__dict__    -> dunder dictionary
+
+methods
+-------
+__add__, __eq__		=> slang -> magic methods
+ 
+we will use magic methods to overload operators
+
+
+
+
+
+
