@@ -1,0 +1,60 @@
+Overload all arithmetic operators
+---------------------------------
++ - add
+- - sub
+* - mul
+/ - div
+// - flrdiv
+
+data types that are
+
+1. mutable
+2. immutable
+
+string is immutable
+-------------------
+
+if the data is private - we will depend on setter and getter methods
+
+Inheritance
+-----------
+inheritance
+multiple inheritance
+multiple level inheritance
+override parent class constructor
+
+
+abstract class
+--------------
+
+
+Duck Types
+----------
+connect() => its a method that gets connected to the database
+
+
+Marshalling and Data Persistence
+--------------------------------
+What is marshalling?
+Marshalling is a process of converting an objects memory representation into a data format suitable for storage or transmission often between parts of a program or different programs
+
+
+Marshalling in python refers to the process of serializing python objects into a byte stream, which can then be stored or transmitted. 
+
+Marshal module in python is specifically designed for this purpose, primarily to support the reading and writing of compiled python modules(.pyc files). its a low level serialization approach on converting internal python objects into binary format. The reverse process converting the byte stream back into a Python object is called unmarshalling
+
+
+Shelve
+------
+
+
+
+
+
+
+
+
+
+
+
+
