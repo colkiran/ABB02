@@ -2,12 +2,12 @@
 2. Decorators and Annotations
 3. Marshalling and Data Persistence
 4. Connecting to databases
-5. Creating minimalistic web applications
+5. Creating minimalistic web applications  (FLASK)
 6. Creating RESTful API interface
 7. Introduction to threads 
 
 
-Decorators
+    Decorators
 ----------
 1. Functions
 
