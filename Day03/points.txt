@@ -1,0 +1,84 @@
+Introduction to threads
+-----------------------
+what are threads?
+
+Threads in python enable concurrent execution of tasks within a single process. They are like lightweight processes that share the same memory space, allowing them to access the same data. However due to python's GIL (Global Interpreter Lock) only one thread can execute Python byte code at a time effectively limiting true parallelism for CPU bound tasks. Thread are most suitable for IO bound tasks where the program spends time waiting for external resources.
+
+Web Application (FLASK)
+-----------------------
+pip install flask
+
+MarkupSafe, itsdangerous, colorama, blinker, Werkzeug, Jinja2, click, flask
+
+Flask is a light weight and flexible web framework for python often described as a microframework due to its minimalist design.
+
+Routing.
+-------
+It enables mapping URL's to specific function defining different end points for the web application.
+
+Templating.
+----------
+Flask uses the jinja2 templating engine to create dynamic HTML pages, allowing for the embedding of python code within HTML.
+
+Request Handling
+----------------
+It provides tools for accessing and processing HTTP requests including data from forms and URL parameters
+
+Extensibility
+-------------
+Flask supports extensions that add functionalities like database integration form validation and authentication
+
+WSGI Compliance
+---------------
+It is based on the Werkzeug WSGI tool kit ensuring compatibility with various web servers
+ 
+Get and Post Methods
+--------------------
+get method - data that is passed using this method is visible in the 	     URL
+
+Post method - data that is passed is hidden
+
+Cookie
+------
+is a small text file that a website stores in a users computer or device. it is used to store information about the user such as their preferences, login details or browsing history, which the website can then retrieve when the user revisits the website. this helps personalize the users experience and track their activity.
+
+
+Session 
+-------
+Session represents a period of interaction between a users browser and a web server. It allows the server to maintain the state information about the user such as login status, shopping cart contents or preferences across multiple requests
+
+eyJ1c2VyIjoia2lyYW4ifQ.aBH2rw.iAz3jJL_dRaHiNSddwd2uVvC9pk
+
+
+REST API
+--------
+
+what is an API?
+
+REST - representational state transfer
+
+JSON data - key: value
+
+CRUD Operations
+---------------
+1. get - extract or read data from the server
+
+2. put
+
+3. patch
+
+4. post
+
+5. delete
+
+
+
+
+
+
+
+
+
+
+
+
